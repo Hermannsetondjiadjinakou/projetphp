@@ -1,5 +1,5 @@
 <?php
-ini_set('display_errors', 0); // Ne pas afficher les erreurs
+ini_set('display_errors', 0);
 error_reporting(0);
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
